@@ -2,10 +2,11 @@
  * Assignment 4 and 5
  * 
  * Group members:
-1. Akshaylohi Nandanar Kandi : C0796744
-2. Charisse Abarico : C0818203
-3. Sumi Varghese : C0813468
-4. Vamshi Vardhan Rao Ginnarapu : C0819851
+1. Syed Zubair Hussaini : C0822217 
+2. Sahil : C0820173 
+3. Bhawna Gupta : C0821937
+
+
 
  * */
 
@@ -59,11 +60,11 @@ class Dealer{
 
 
 
-class CardPlayer{
+class Card_Player{
 	String playerName;
 	ArrayList <Card> cardsInHand;
 	
-	public CardPlayer(String name) {
+	public Card_Player(String name) {
 		this.playerName = "Player: "+ name;
 	}
 	public void receiveCards(Card card) {
@@ -72,7 +73,7 @@ class CardPlayer{
 }
 
 class CardPlayers{
-	public ArrayList<CardPlayer> playerList = new ArrayList<CardPlayer>();
+	public ArrayList<Card_Player> playerList = new ArrayList<Card_Player>();
 }
 
 
@@ -80,13 +81,13 @@ class Deck{
 	ArrayList<Card> theCards = new ArrayList<Card>();
 	
 	public Deck() {
-		this.createDeck();
+		this.create_Deck();
 		for (int c = 0 ; c < theCards.size(); c ++) {
 			System.out.println(theCards.get(c)); // this arraylist of cards
 		}
 	}
 	
-	public void createDeck() {
+	public void create_Deck() {
 		String[] suites = {"red","blue","green", "purple" };
 		int[] values = {1,2,3,4,5,6,7,8,9,10};
 		for (int s = 0; s < suites.length; s ++ ) {
